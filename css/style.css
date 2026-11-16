@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Roboto
+font-family: "Roboto", sans-serif;
+*/
+
+/* Montserrat
+font-family: "Montserrat", sans-serif;
+*/
+
+/*                          Global                              */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Ancho maximo para todas las imagenes (del contenedor en el que este) */
+img {
+    max-width: 100%;
+}
+
+/*                          Header                                 */
+
+header {
+    background-color: #4d7aebc1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #06050f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.boton-navegador {
+    /* propiedad box model */
+    /* borde (ancho,color,tipo)*/
+    border: 1px, #080909, solid;
+    border-radius: 5px;
+    background-color: #afc7ff;
+    /* relleno */
+    padding: 2px;
+    /* espacio fuera del borde con sus vecinos */
+    /* margin: 2rem; */
+}
+
+.logo {
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+/*                                  Body                                */
+body {
+    background-color: #ffffff;
+    color: #121111;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*                                  Main                                */
+
+.page-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*                              Section                                 */
+/*                              INDEX                                    */
+
+section {
+    background-color: #afc7ff;
+}
+
+.section-destacado {
+    /* propiedades flex*/
+    /*1. llamo a flex*/
+    display: flex;
+    /* 2.direction  (pre-determinado: row horizontal)*/
+    flex-direction: column;
+    /* 3. Distribuir elementos del eje principal*/
+    /* justify-content: center; */
+    /* 4. alinia elementos-items*/
+    align-items: center;
+    /* 5.genera espacios flex entre  */
+    gap: 1.5rem;
+    border: 3px, #8da2d3, solid;
+    border-radius: 0.7rem;
+    text-align: justify;
+    margin-top: 1rem;
+    background-color: #afc7ff;
+    width: 70rem;
+    flex-wrap: nowrap;
+}
+
+.contenedor-card {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+}
+
+.section-servicios {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 45rem;
+    border: 3px, #8da2d3, solid;
+    border-radius: 0.7rem;
+    padding-top: 1rem;
+    flex-wrap: nowrap;
+}
+
+.section-errores {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 45rem;
+    border: 3px, #8da2d3, solid;
+    border-radius: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-wrap: nowrap;
+}
+
+.section-etapas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+}
+
+.imagen {
+    height: 500px;
+    width: 950px;
+}
+
+.titulo-section {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.titulo-presentacion {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.subtitulos-section {
+    padding-left: 1rem;
+    text-decoration: underline;
+}
+
+.titulo {
+    padding: 1rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.parrafo {
+    padding: 1rem;
+}
+
+/*                              NOSOTROS                                 */
+
+.section-certificado {
+    background-color: #ffffff
+}
+
+.contenedor-nosotros {
+    border: 4px, #2f3138, ridge;
+    border-radius: 0.7rem;
+    text-align: justify;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contenedor-primario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+
+}
+
+.correccion-img {
+    padding-top: 4rem;
+}
+
+.contenedor-secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.section-equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 3px, #8da2d3, solid;
+    border-radius: 0.7rem;
+    text-align: justify;
+    width: 70rem;
+}
+
+.img-equipo {
+    height: 500px;
+    width: 900px;
+    padding-bottom: 1rem;
+}
+
+/*                              Formatos                                */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* BORRAR DESPUES */
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/*                                  Footer                              */
+
+footer {
+    background-color: #4d7aebc1;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    flex-wrap: nowrap;
+}
+
+.redes {
+    width: 2rem;
+}
