@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 header nav ul {
@@ -35,7 +34,7 @@ header nav ul {
     display: flex;
     gap: 1rem;
     padding-right: 1rem;
-    flex-wrap: wrap;
+    flex: 0 0 auto
 }
 
 header nav ul a {
@@ -61,6 +60,7 @@ header nav ul a {
 .logo {
     width: 5rem;
     padding-left: 1rem;
+    /* flex-shrink: 0; */
 }
 
 /*                                  Body                                */
@@ -72,14 +72,7 @@ body {
 
 /*                                  Main                                */
 
-.page-inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-nosotros {
+.page-config {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,15 +103,15 @@ section {
     text-align: justify;
     margin-top: 1rem;
     background-color: #afc7ff;
-    width: 70rem;
-    flex-wrap: nowrap;
+    width: 80rem;
+    max-width: 100%;
 }
 
 .contenedor-card {
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .section-servicios {
@@ -127,11 +120,11 @@ section {
     text-align: justify;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 45rem;
+    max-width: 45rem;
+    width: 100%;
     border: 3px, #8da2d3, solid;
     border-radius: 0.7rem;
     padding-top: 1rem;
-    flex-wrap: nowrap;
 }
 
 .section-errores {
@@ -140,12 +133,12 @@ section {
     text-align: justify;
     padding-right: 1rem;
     padding-left: 1rem;
-    width: 45rem;
+    max-width: 45rem;
+    width: 100%;
     border: 3px, #8da2d3, solid;
     border-radius: 0.7rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    flex-wrap: nowrap;
 }
 
 .section-etapas {
@@ -188,38 +181,28 @@ section {
 
 /*                              NOSOTROS                                 */
 
-.section-certificado {
-    background-color: #ffffff
-}
-
 .contenedor-nosotros {
-    border: 4px, #2f3138, ridge;
-    border-radius: 0.7rem;
-    text-align: justify;
-    margin-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cuadro1"
+        "cuadro2"
+        "horizontal";
+    gap: 1.5rem;
+    padding: 1rem;
+    place-items: center;
 }
 
-.contenedor-primario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 2rem;
-
+.imagen1 {
+    grid-area: horizontal;
 }
 
-.correccion-img {
-    padding-top: 4rem;
+.imagen2 {
+    grid-area: cuadro1;
 }
 
-.contenedor-secundario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+.imagen3 {
+    grid-area: cuadro2;
 }
 
 .section-equipo {
@@ -227,12 +210,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 3px, #8da2d3, solid;
+    border: 3px, #8da2d3, solf;
     border-radius: 0.7rem;
     text-align: justify;
-    width: 70rem;
+    width: 80rem;
+    max-width: 100%;
 }
 
 .img-equipo {
@@ -281,9 +264,37 @@ footer ul {
     padding-top: 1rem;
     padding-right: 5rem;
     padding-bottom: 1rem;
-    flex-wrap: nowrap;
 }
 
 .redes {
     width: 2rem;
+}
+
+/*                              MEDIA QUERY                  */
+/*              LAPTOP                                        */
+@media (min-width: 1024px) {
+    .contenedor-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "cuadro1 cuadro2"
+            "horizontal horizontal";
+    }
+
+    .imagen1 {
+        grid-area: cuadro1;
+    }
+
+    .imagen2 {
+        grid-area: cuadro2;
+    }
+
+    .imagen3 {
+        grid-area: horizontal;
+    }
 }
