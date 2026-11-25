@@ -10,34 +10,36 @@
 
 <body>
     <header>
-        <img src="../assets/logo-empresa.png" alt="logo de la empresa">
+        <div class="logo">
+            <img src="../assets/logo-empresa.png" alt="logo de la empresa">
+        </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="#">Herramientas</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="../index.html" class="boton-navegador">Inicio</a></li>
+                <li><a href="./nosotros.html" class="boton-navegador">Nosotros</a></li>
+                <li><a href="./servicios.html" class="boton-navegador">Servicios</a></li>
+                <li><a href="#" class="boton-navegador">Herramientas</a></li>
+                <li><a href="./proyectos.html" class="boton-navegador">Proyectos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="page-config">
         <section>
-            <h1 class="titulo">Herramientas</h1>
+            <h1>Herramientas</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id harum nostrum consequuntur fugit libero! Ab
                 error totam mollitia, perspiciatis dolore maiores fugiat, quas, dicta esse libero voluptates rerum
                 voluptatem veritatis.</p>
 
             <article>
-                <h2 class="titulo">Diseño Web</h2>
+                <h2 class="subrayado">Diseño Web</h2>
 
                 <ul>
-                    <li><h3>Figma:</h3>
+                    <li class="lista"><b>Figma:</b>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem delectus tenetur
                             ipsa</p>
                     </li>
-                    <li><h3>Adobe XD / Sketch:</h3>
+                    <li class="lista"><b>Adobe XD / Sketch:</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur fugit aliquid
                             temporibus.</p>
                     </li>
@@ -49,18 +51,18 @@
             </article>
 
             <article>
-                <h2 class="titulo">Desarrollo y Programacion</h2>
+                <h2 class="subrayado">Desarrollo y Programacion</h2>
 
                 <ul>
-                    <li><h3 class="lista">Visual Studio Code:</h3>
+                    <li class="lista"><b>Visual Studio Code:</b>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem delectus tenetur
                             ipsa</p>
                     </li>
-                    <li><h3 class="lista">Git y Github:</h3>
+                    <li class="lista"><b>Git y Github:</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur fugit aliquid
                             temporibus.</p>
                     </li>
-                    <li><h3 class="lista">Docker:</h3>
+                    <li class="lista"><b>Docker:</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur fugit aliquid
                             temporibus.</p>
                     </li>
@@ -72,14 +74,14 @@
             </article>
 
             <article>
-                <h2 class="titulo">Pruebas, Rendimiento y SEO</h2>
+                <h2 class="subrayado">Pruebas, Rendimiento y SEO</h2>
 
                 <ul>
-                    <li><h3 class="lista">Google Lighthouse:</h3>
+                    <li class="lista"><b>Google Lighthouse:</b>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem delectus tenetur
                             ipsa</p>
                     </li>
-                    <li><h3 class="lista">Google Search Console:</h3>
+                    <li class="lista"><b>Google Search Console:</b>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequuntur fugit aliquid
                             temporibus.</p>
                     </li>
@@ -96,18 +98,16 @@
     <footer>
         <ul>
             <li><a href="https://web.facebook.com/" target="_blank"><img src="../assets/logo-facebook.png"
-                        alt="logo de instagram"></a>
+                        alt="logo de instagram" class="redes"></a>
             </li>
             <li><a href="https://www.instagram.com" target="_blank"><img src="../assets/logo-instagram.png"
-                        alt="logo de facebook"></a>
+                        alt="logo de facebook" class="redes"></a>
             </li>
             <li><a href="https://www.tiktok.com" target="_blank"><img src="../assets/logo-tiktok.png"
-                        alt="logo de titok"></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX" target="_blank"><img src="../assets/logo-whatssap.png"
-                        alt="logo de whatssap"></a></li>
-
+                        alt="logo de titok" class="redes"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX" target="_blank"><img
+                        src="../assets/logo-whatssap.png" alt="logo de whatssap" class="redes"></a></li>
         </ul>
-
         <p>&copy; Derechos Reservados</p>
     </footer>
 </body>
